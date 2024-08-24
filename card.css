@@ -66,22 +66,23 @@
   }
   
   .cards-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    margin-left: 80px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     gap: 20px;
+    justify-content: center;
   }
   
   article.card {
     position: relative;
-    width: 350px;
+    width: 400px;
     height: 350px;
     border-radius: 3px;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
     overflow: hidden;
   }
   
-  article.card .thumb1 {
+  .thumb1 {
     width: auto;
     height: 260px;
     background: url("img/tracking.gif") no-repeat center;
@@ -89,7 +90,7 @@
     border-radius: 3px;
   }
 
-  article.card .thumb2 {
+  .thumb2 {
     width: auto;
     height: 260px;
     background: url("img/tsa.jpg") no-repeat center;
@@ -97,10 +98,18 @@
     border-radius: 3px;
   }
 
-  article.card .thumb3 {
+  .thumb3 {
     width: auto;
     height: 260px;
     background: url("img/webdev.avif") no-repeat center;
+    background-size: cover;
+    border-radius: 3px;
+  }
+
+  .thumb4 {
+    width: auto;
+    height: 260px;
+    background: url("img/blog.jpeg") no-repeat center;
     background-size: cover;
     border-radius: 3px;
   }
