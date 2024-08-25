@@ -113,6 +113,14 @@
     background-size: cover;
     border-radius: 3px;
   }
+
+  .thumb5 {
+    width: auto;
+    height: 260px;
+    background: url("img/compare.png") no-repeat center;
+    background-size: cover;
+    border-radius: 3px;
+  }
   
   article.card .infos {
     width: auto;
